@@ -42,11 +42,11 @@ you can set up in which rounded corner should be applied on the opened window by
 * case `round_all=0`
     - no rules means window is not-rounded
     - `floating` means window is rounded
-    - `centered` means flexible, rounded on/with mouse resize (it causes windows won't be able to autoresize properly when changing layouts after the rounded corners applied)
+    - `centered` means flexible, rounded on/with mouse resize (it causes window won't be able to autoresize properly when changing layouts after the rounded corners applied)
     - `floating` + `centered` means window is not-rounded (use this in case you need to toggle between `floating` and `fullscreen` window like `mpv`, `sxiv`, etc)
 
 * case `round_all=1`
-    - everythings will be rounded (but it also draws rounded corners in a `fullscreen` window resulting in ugly corners)
+    - everythings will be rounded (but it also draws rounded corners in a `fullscreen` mode resulting in ugly corners)
 
 ## Useless trivia
 - fu stands for forked by nub, so you know what you want to expect from this custom build
