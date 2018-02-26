@@ -21,6 +21,7 @@ patches used on this custom are as follows :
 
 ### installation
 [README](dwm-README)
+
 Edit config.mk and config.h to match your local setup (dwm is installed into
 the /usr/local namespace by default).
 
@@ -46,7 +47,7 @@ quirks and behaviour you might expect :
     - `floating` + `centered` means window is `not-rounded` (use this in case you need to toggle between floating and fullscreen window like mpv, sxiv, etc)
 
 * case round_all=1
-    everythings will be rounded, fixes the resize problem, but it also draws rounded corners in a fullscreen window resulting in uggly corners
+    - everythings will be rounded (it also draws rounded corners in a fullscreen window resulting in uggly corners)
 
 ## license
 
