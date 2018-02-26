@@ -3,7 +3,7 @@
 # simple shell script for dwm status bar
 # more@ github.com/okiptkn
 #
-# Lisencing stuff : You're free to do whatever the fuck you want to do with this script
+# Lisencing stuff : You're free to do whatever you want to do with this script
 
 _net() {
         local _GETIWL=$(/sbin/iwgetid -r)
