@@ -1,7 +1,7 @@
 # dwmfu
 
-custom build of dwm forked from the suckless repo https://dwm.suckless.org/ .
-reminder that fu stands for forked by nub, so know what you might want to expect from this custom build
+custom build of dwm forked from the suckless repo https://dwm.suckless.org/
+- reminder that fu stands for forked by nub, so know what you might want to expect from this custom build
 
 ## Requirements
 In order to build dwm you need the Xlib header files.
@@ -31,8 +31,8 @@ necessary as root):
 ```
     make clean install
 ```
-and put `exec dwm` on the last line of your `~/.xinitrc` .
-note : PKGBUILD is also included in case you want to build a package, edit it to suits your setup, and make sure you clean up the previous dwm installation if exist
+and put `exec dwm` on the last line of your `~/.xinitrc`
+- note : PKGBUILD is also included in case you want to build a package, edit it to suits your setup, and make sure you clean up the previous dwm installation if exist
 
 ### usage
 everything should be written on the config.h
