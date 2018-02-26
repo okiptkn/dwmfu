@@ -21,10 +21,10 @@ patches applied on this custom are as follows :
 ### Installation
 see also [dwm-README](dwm-README)
 
-Edit config.mk and config.h to match your local setup (dwm is installed into
-the /usr/local namespace by default).
+Edit `config.mk` and `config.h` to match your local setup (`dwm` is installed into
+the `/usr/local` namespace by default).
 
-Afterwards enter the following command to build and install dwm (if
+Afterwards enter the following command to build and install `dwm` (if
 necessary as root):
 
 ```
@@ -34,7 +34,7 @@ and put `exec dwm` on the last line of your `~/.xinitrc`
 - note for arch user : `PKGBUILD` is also included in case you want to build a package, edit it to suits your setup, and make sure to clean up the previous dwm installation if exist
 
 ### Usage
-everything should be written on the `config.h`
+everything should be written on the `config.h`, edit color scheme in `scheme.h`
 
 ### About rounded patch
 you can set up in which rounded corner should applied on the opened window by issuing `isfloating` and/or `iscentered` rules in `config.h`
@@ -52,9 +52,10 @@ you can set up in which rounded corner should applied on the opened window by is
 - fu stands for forked by nub, so you know what you want to expect from this custom build
 
 ## License
-Original dwm license - see the [LICENSE](LICENSE) file for details
+Original `dwm` license - see the [LICENSE](LICENSE) file for details
 
 ## Sauce
 * [dwm - dynamic window manager for X](https://dwm.suckless.org/)
+* [patches](https://dwm.suckless.org/patches/)
 * [MitchWeaver's rounded patch](https://github.com/MitchWeaver/dotfiles/blob/8d76e479715e7fa7b4df153719d3d25144f9f7f2/suckless-tools/dwm/dwm/dwm.c#L938)
 
