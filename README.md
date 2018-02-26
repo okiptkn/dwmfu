@@ -1,14 +1,14 @@
 # dwmfu
 
-custom build of dwm forked from the suckless repo https://dwm.suckless.org/
-- reminder that fu stands for forked by nub, so know what you might want to expect from this custom build
+custom build of dwm 6.1 forked from the suckless repo https://dwm.suckless.org/
+- reminder that fu stands for forked by nub, so you know what you might want to expect from this custom build
 
 ## Requirements
 In order to build dwm you need the Xlib header files.
 - mpd is needed for mpdcontrol support
 
 ## patches
-patches used on this custom are as follows :
+patches applied on this custom are as follows :
 * dwm-6.1-pertag_without_bar.diff
 * dwm-center-6.1.diff
 * dwm-centeredmaster-6.1.diff
