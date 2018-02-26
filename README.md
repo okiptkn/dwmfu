@@ -21,10 +21,10 @@ patches applied on this custom are as follows :
 ### Installation
 see also [dwm-README](dwm-README)
 
-Edit `config.mk` and `config.h` to match your local setup (`dwm` is installed into
+Edit `config.mk` and `config.h` to match your local setup (dwm is installed into
 the `/usr/local` namespace by default).
 
-Afterwards enter the following command to build and install `dwm` (if
+Afterwards enter the following command to build and install dwm (if
 necessary as root):
 
 ```
@@ -46,13 +46,13 @@ you can set up in which rounded corner should applied on the opened window by is
     - `floating` + `centered` means window is not-rounded (use this in case you need to toggle between `floating` and `fullscreen` window like `mpv`, `sxiv`, etc)
 
 * case `round_all=1`
-    - everythings will be `rounded` (it also draws rounded corners in a `fullscreen` window resulting in ugly corners)
+    - everythings will be rounded (it also draws rounded corners in a `fullscreen` window resulting in ugly corners)
 
 ## Useless trivia
 - fu stands for forked by nub, so you know what you want to expect from this custom build
 
 ## License
-Original `dwm` license - see the [LICENSE](LICENSE) file for details
+Original dwm license - see the [LICENSE](LICENSE) file for details
 
 ## Sauce
 * [dwm - dynamic window manager for X](https://dwm.suckless.org/)
