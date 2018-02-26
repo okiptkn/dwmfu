@@ -31,7 +31,7 @@ necessary as root):
     make clean install
 ```
 and put `exec dwm` on the last line of your `~/.xinitrc`
-- note for arch user : `PKGBUILD` is also included in case you want to build a package, edit it to suits your setup, and make sure to clean up the previous dwm installation if exist
+- `PKGBUILD` is also included in case you want to build a package, edit it to suits your setup, and make sure to clean up the previous dwm installation if exist
 
 ### Usage
 everything should be written on the `config.h`, edit color scheme in `scheme.h`
