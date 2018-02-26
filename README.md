@@ -1,6 +1,6 @@
 # dwmfu
 
-custom build of dwm forked from the suckless repo https://dwm.suckless.org/
+custom build of dwm forked from the suckless repo https://dwm.suckless.org/ 
 reminder that fu stands for forked by nub, so know what you might want to expect from this custom build
 
 ## Requirements
@@ -47,7 +47,7 @@ quirks and behaviour you might expect :
     - `floating` + `centered` means window is `not-rounded` (use this in case you need to toggle between floating and fullscreen window like mpv, sxiv, etc)
 
 * case round_all=1
-    - everythings will be rounded (it also draws rounded corners in a fullscreen window resulting in uggly corners)
+    - everythings will be rounded (it also draws rounded corners in a fullscreen window resulting in ugly corners)
 
 ## license
 
