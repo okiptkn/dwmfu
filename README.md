@@ -37,7 +37,7 @@ and put `exec dwm` on the last line of your `~/.xinitrc`
 everything should be written on the `config.h`, edit color scheme in `scheme.h`
 
 ### About rounded patch
-you can set up in which rounded corner should be applied on the opened window by issuing `isfloating` and/or `iscentered` rules in `config.h`
+you can set up in which rounded corner should be applied on the opened window by issuing `isfloating` and/or `iscentered` rules in `config.h . Do note that original rules remains apply `isfloating` will make window floating and `iscentered` will make window centered respectively.
 - quirks and behaviour you might expect :
 * case `round_all=0`
     - no rules means window is not-rounded
