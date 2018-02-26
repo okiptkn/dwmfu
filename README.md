@@ -1,6 +1,6 @@
 # dwmfu
 
-custom build of dwm forked from the suckless repo https://dwm.suckless.org/ 
+custom build of dwm forked from the suckless repo https://dwm.suckless.org/ .
 reminder that fu stands for forked by nub, so know what you might want to expect from this custom build
 
 ## Requirements
@@ -31,7 +31,7 @@ necessary as root):
 ```
     make clean install
 ```
-and put `exec dwm` on the last line of your `~/.xinitrc`
+and put `exec dwm` on the last line of your `~/.xinitrc` .
 note : PKGBUILD is also included in case you want to build a package, edit it to suits your setup, and make sure you clean up the previous dwm installation if exist
 
 ### usage
@@ -50,11 +50,9 @@ quirks and behaviour you might expect :
     - everythings will be rounded (it also draws rounded corners in a fullscreen window resulting in ugly corners)
 
 ## license
-
 Original dwm license - see the [LICENSE](LICENSE) file for details
 
 ## sauce
-
 * suckless.org
 * [MitchWeaver's rounded patch](https://github.com/MitchWeaver/dotfiles/blob/8d76e479715e7fa7b4df153719d3d25144f9f7f2/suckless-tools/dwm/dwm/dwm.c#L938)
 
