@@ -22,12 +22,12 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
     /* class            instance     title          tags mask       (c)iscentered  (f)isfloating   monitor   |    (c,f) rounded corner behaviour example    */
-    { "Firefox",        NULL,        NULL,          1 << 3,	       	0,              0,             -1 },     //   (0,0) NOT
-    { "Code",  	        NULL,        NULL,          1 << 2,	       	0,              0,             -1 },     //   (0,0) NOT
+    { "Firefox",        NULL,        NULL,          1 << 3,	    0,              0,             -1 },     //   (0,0) NOT
+    { "Code",  	        NULL,        NULL,          1 << 2,	    0,              0,             -1 },     //   (0,0) NOT
     { "Sxiv",           NULL,        NULL,          0,              1,              1,             -1 },     //   (1,1) NOT
-    { "Color-picker",   NULL,        NULL,          0,         	   	0,              1,             -1 },     //   (0,1) rounded
-    { "XFontSel",       NULL,        NULL,          0,             	1,              1,             -1 },     //   (1,1) NOT
-    { "Xfd",            NULL,        NULL,          0,             	1,              1,             -1 },     //   (1,1) NOT
+    { "Color-picker",   NULL,        NULL,          0,         	    0,              1,             -1 },     //   (0,1) rounded
+    { "XFontSel",       NULL,        NULL,          0,              1,              1,             -1 },     //   (1,1) NOT
+    { "Xfd",            NULL,        NULL,          0,              1,              1,             -1 },     //   (1,1) NOT
     { "tabbed",         NULL,        NULL,          0,              1,              0,             -1 },     //   (1,0) rounded ONLY on mouse resize 
     { "st-256color",    NULL,        NULL,          0,              0,              1,             -1 },     //   (0,1) rounded
     { "mpv",            NULL,        NULL,          0,              1,         	    1,             -1 },     //   (1,1) NOT
@@ -79,10 +79,10 @@ static const char  *killcmd[]    = { "shutdown", "now", NULL };
 #include "mpdcontrol.c"
 static Key keys[] = {
 	/* modifier                       key				function               		 argument */
-    { Mod4Mask,                     XK_s,                 spawn,                   {.v = scriptcmd } },
-    { Mod4Mask,                     XK_c,                 spawn,                   {.v = clipb } },
+        { Mod4Mask,                     XK_s,                 spawn,                   {.v = scriptcmd } },
+        { Mod4Mask,                     XK_c,                 spawn,                   {.v = clipb } },
 	{ MODKEY,                       XK_Return,            spawn,                   {.v = termcmd } },
-    { MODKEY,                       XK_grave,             togglescratch,           {.v = scratchcmd } },
+        { MODKEY,                       XK_grave,             togglescratch,           {.v = scratchcmd } },
 	{ Mod4Mask,                     XK_e,                 spawn,                   {.v = vscmd } },
 	{ Mod4Mask,                     XK_w,                 spawn,                   {.v = foxcmd } },
 	{ 0,                            XK_Print,             spawn,                   {.v = scrotcmd } },
@@ -107,8 +107,8 @@ static Key keys[] = {
 	{ Mod4Mask,                     XK_f,                 setlayout,               {.v = &layouts[1]} },
 	{ Mod4Mask,                     XK_m,                 setlayout,               {.v = &layouts[2]} },
 	{ Mod4Mask,                     XK_d,                 setlayout,               {.v = &layouts[3]} },
-    { Mod4Mask,                     XK_i,                 setlayout,               {.v = &layouts[4]} },
-    { Mod4Mask,                     XK_o,                 setlayout,               {.v = &layouts[5]} },
+        { Mod4Mask,                     XK_i,                 setlayout,               {.v = &layouts[4]} },
+        { Mod4Mask,                     XK_o,                 setlayout,               {.v = &layouts[5]} },
 	{ Mod4Mask,                     XK_v,                 setlayout,               {0} },
 	{ Mod4Mask|ShiftMask,           XK_f,                 togglefloating,          {0} },
 	{ MODKEY,                       XK_0,                 view,                    {.ui = ~0 } },
