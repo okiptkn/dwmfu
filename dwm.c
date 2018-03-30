@@ -38,7 +38,7 @@
 #include <X11/Xutil.h>
 #ifdef XINERAMA
 #include <X11/extensions/Xinerama.h>
-#include <X11/extensions/shape.h> // lalala
+#include <X11/extensions/shape.h> 
 #endif /* XINERAMA */
 #include <X11/Xft/Xft.h>
 
@@ -1098,7 +1098,6 @@ manage(Window w, XWindowAttributes *wa)
 	grabbuttons(c, 0);
 	if (!c->isfloating/* && !c->iscentered*/) {
 		c->isfloating = c->oldstate = trans != None || c->isfixed;
-//        if(round_all == 0) drawroundedcorners(c); // lalala555
     }
 	if (c->isfloating)
 		XRaiseWindow(dpy, c->win);
@@ -1108,7 +1107,7 @@ manage(Window w, XWindowAttributes *wa)
 		(unsigned char *) &(c->win), 1);
 	XMoveResizeWindow(dpy, c->win, c->x + 2 * sw, c->y, c->w, c->h); /* some windows require this */
 	setclientstate(c, NormalState);
-    if (c->isfloating && !c->iscentered && round_all == 0) drawroundedcorners(c); // lalala
+    if (c->isfloating && !c->iscentered && round_all == 0) drawroundedcorners(c); 
 	if (c->mon == selmon)
 		unfocus(selmon->sel, 0);
 	c->mon->sel = c;

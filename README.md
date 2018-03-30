@@ -50,7 +50,7 @@ you can set up in which rounded corner should be applied on the opened window by
     - everythings will be rounded (but it also draws rounded corners in a `fullscreen` mode resulting in ugly corners)
 
 ## Useless trivia
-- fu stands for forked by nub, so you know what you want to expect from this custom build
+- fu stands for forked by nub, just so you know what you might want to expect from this custom build
 
 ## License
 Original dwm license - see the [LICENSE](LICENSE) file for details
