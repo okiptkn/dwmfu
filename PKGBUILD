@@ -7,7 +7,7 @@ pkgdesc="A dynamic window manager for X"
 url="http://dwm.suckless.org"
 arch=('i686' 'x86_64')
 license=('MIT')
-depends=('libx11' 'libxinerama' 'libmpd')
+depends=('libx11' 'libxinerama' 'libmpdclient>=2.8')
 
 provides=("${_pkgname}")                                                                                    
 conflicts=("${_pkgname}")
