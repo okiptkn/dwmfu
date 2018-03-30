@@ -4,11 +4,12 @@
 # more@ github.com/okiptkn
 #
 # (c) 2018 <Restu Purnomo>
-# Licensing stuff : By the name of the Dark Lord Satania-sama, I hereby granted you the permissions to do whatever the fuck it is you want to do with this script
+# Licensing stuff : By the name of the Dark Lord Satania-sama, I hereby granted you the permissions 
+# to do whatever the fuck it is you want to do with this script. No warranty or whatsoever provided.
 # 
 
 _net() {
-        local _GETIWL=$(/sbin/iwgetid -r)
+        local _GETIWL=$(/sbin/iwgetid -r) # requires wireless_tools package
         local _GETETH=$(ip a | grep "state UP" | awk '{ORS=""}{print $2}' | cut -d ':' -f 1)
         local _status="${_GETIWL:_GETETH}"
         local _off="disconnected"
@@ -35,7 +36,7 @@ _touchp() {
 }
 
 _music() {
-        local stat=$(mpc status | grep \# | awk '{print $1}' &2>/dev/null)
+        local stat=$(mpc status | grep \# | awk '{print $1}' &2>/dev/null) # requires mpc package
         local artist=$(mpc -f %artist% current &2>/dev/null)
         local musicname=$(mpc -f %title% current &2>/dev/null)
         local text="no media are currently playing"
