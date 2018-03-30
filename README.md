@@ -4,7 +4,7 @@ custom build of dwm 6.1 forked from the suckless repo https://dwm.suckless.org/
 
 ## Requirements
 In order to build dwm you need the Xlib header files.
-- `libmpd` is needed for mpdcontrol support
+- `libmpdclient` is needed for mpdcontrol support
 
 ## Patches
 patches applied on this custom are as follows :
