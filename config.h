@@ -21,16 +21,16 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-    /* class            instance     title          tags mask       (c)iscentered  (f)isfloating   monitor   |    (c,f) rounded corner behaviour example    */
-    { "Firefox",        NULL,        NULL,          1 << 3,	    0,              0,             -1 },     //   (0,0) NOT
-    { "Code",  	        NULL,        NULL,          1 << 2,	    0,              0,             -1 },     //   (0,0) NOT
-    { "Sxiv",           NULL,        NULL,          0,              1,              1,             -1 },     //   (1,1) NOT
-    { "Color-picker",   NULL,        NULL,          0,         	    0,              1,             -1 },     //   (0,1) rounded
-    { "XFontSel",       NULL,        NULL,          0,              1,              1,             -1 },     //   (1,1) NOT
-    { "Xfd",            NULL,        NULL,          0,              1,              1,             -1 },     //   (1,1) NOT
-    { "tabbed",         NULL,        NULL,          0,              1,              0,             -1 },     //   (1,0) rounded ONLY on mouse resize 
-    { "st-256color",    NULL,        NULL,          0,              0,              1,             -1 },     //   (0,1) rounded
-    { "mpv",            NULL,        NULL,          0,              1,         	    1,             -1 },     //   (1,1) NOT
+  /* class            instance     title     tags mask    (c)iscentered   (f)isfloating   monitor   |    (c,f) rounded corner behaviour example    */
+  { "Firefox",        NULL,        NULL,     1 << 3,	   0,              0,             -1 },     //   (0,0) NOT
+  { "Code",           NULL,        NULL,     1 << 2,	   0,              0,             -1 },     //   (0,0) NOT
+  { "Sxiv",           NULL,        NULL,     0,            1,              1,             -1 },     //   (1,1) NOT
+  { "Color-picker",   NULL,        NULL,     0,            0,              1,             -1 },     //   (0,1) rounded
+  { "XFontSel",       NULL,        NULL,     0,            1,              1,             -1 },     //   (1,1) NOT
+  { "Xfd",            NULL,        NULL,     0,            1,              1,             -1 },     //   (1,1) NOT
+  { "tabbed",         NULL,        NULL,     0,            1,              0,             -1 },     //   (1,0) rounded ONLY on mouse resize 
+  { "st-256color",    NULL,        NULL,     0,            0,              1,             -1 },     //   (0,1) rounded
+  { "mpv",            NULL,        NULL,     0,            1,         	   1,             -1 },     //   (1,1) NOT
 };
 
 // layout(s)
