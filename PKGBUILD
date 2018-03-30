@@ -1,4 +1,4 @@
-
+# Maintainer: Restu Purnomo <restu.okky[at]gmail[dot]com>
 pkgname=dwmfu
 _pkgname=dwm
 pkgver=6.1.f
@@ -7,10 +7,10 @@ pkgdesc="A dynamic window manager for X"
 url="http://dwm.suckless.org"
 arch=('i686' 'x86_64')
 license=('MIT')
-depends=('libx11' 'libxinerama')
+depends=('libx11' 'libxinerama' 'libmpd')
 
-provides=("${pkgname}")                                                                                    
-conflicts=("${pkgname}")
+provides=("${_pkgname}")                                                                                    
+conflicts=("${_pkgname}")
 
 build() {
   cd $pkgname
@@ -24,4 +24,4 @@ package() {
   install -m644 -D README $pkgdir/usr/local/share/doc/$_pkgname/README
 }
 
-
+# vim:set ts=2 sw=2 et:

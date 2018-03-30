@@ -3,7 +3,7 @@
 # simple shell script for dwm status bar
 # more@ github.com/okiptkn
 #
-# Lisencing stuff : You're free to do whatever you want to do with this script
+# Licensing stuff : You're free to do whatever you want to do with this script, 2108 Restu Purnomo
 
 _net() {
         local _GETIWL=$(/sbin/iwgetid -r)

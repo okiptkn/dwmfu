@@ -4,7 +4,7 @@ custom build of dwm 6.1 forked from the suckless repo https://dwm.suckless.org/
 
 ## Requirements
 In order to build dwm you need the Xlib header files.
-- `mpd` is needed for mpdcontrol support
+- `libmpd` is needed for mpdcontrol support
 
 ## Patches
 patches applied on this custom are as follows :
@@ -16,7 +16,8 @@ patches applied on this custom are as follows :
 * dwm-r1615-mpdcontrol.diff
 * dwm-scratchpad-20170207-bb3bd6f.diff
 * dwm-uselessgap-6.1.diff
-* rounded corners patch (c)MitchWeaver
+* rounded corners patch (MitchWeaver)
+* dwm-statuscolors-nopad-20180103-db22360.diff (jgrar)
 
 ### Installation
 see also [dwm-README](dwm-README)
@@ -31,7 +32,7 @@ necessary as root):
     make clean install
 ```
 and put `exec dwm` on the last line of your `~/.xinitrc`
-- `PKGBUILD` is also included in case you want to build a package, edit it to suits your setup, and make sure to clean up the previous dwm installation if exist
+- for arch user `PKGBUILD` is also included in case you want to build a local package, edit it to suits your setup, and make sure to clean up the previous dwm installation if exist `sudo make clean uninstall`
 
 ### Usage
 everything should be written on the `config.h`, edit color scheme in `scheme.h`
@@ -39,7 +40,7 @@ everything should be written on the `config.h`, edit color scheme in `scheme.h`
 ### About rounded patch
 you can set up in which rounded corner should be applied on the opened window by issuing `isfloating` and/or `iscentered` rules in `config.h` . Do note that original rules remains apply `isfloating` will make window floating and `iscentered` will make window centered respectively.
 - quirks and behaviour you might expect :
-* case `round_all=0`
+* case `round_all=0`, view examples in `config.h`
     - no rules means window is not-rounded
     - `floating` means window is rounded
     - `centered` means flexible, rounded on/with mouse resize (it causes window won't be able to autoresize properly when changing layouts after the rounded corners applied)
@@ -58,4 +59,4 @@ Original dwm license - see the [LICENSE](LICENSE) file for details
 * [dwm - dynamic window manager for X](https://dwm.suckless.org/)
 * [patches](https://dwm.suckless.org/patches/)
 * [MitchWeaver's rounded patch](https://github.com/MitchWeaver/dotfiles/blob/8d76e479715e7fa7b4df153719d3d25144f9f7f2/suckless-tools/dwm/dwm/dwm.c#L938)
-
+* [jgrar's statuscolors patch](https://github.com/jgrar/dwm-patches/blob/master/statuscolors/dwm-statuscolors-nopad-20180103-db22360.diff)
