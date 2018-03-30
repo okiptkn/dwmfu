@@ -1,9 +1,11 @@
 #!/bin/sh
 #
-# simple shell script for dwm status bar
+# a simple shell script for dwm status bar
 # more@ github.com/okiptkn
 #
-# Licensing stuff : You're free to do whatever you want to do with this script, 2108 Restu Purnomo
+# (c) 2018 <Restu Purnomo>
+# Licensing stuff : By the name of the Dark Lord Satania-sama, I hereby granted you the permissions to do whatever the fuck it is you want to do with this script
+# 
 
 _net() {
         local _GETIWL=$(/sbin/iwgetid -r)
