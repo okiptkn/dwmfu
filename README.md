@@ -26,7 +26,7 @@ Edit `config.mk` and `config.h` to match your local setup (dwm is installed into
 the `/usr/local` namespace by default).
 
 Afterwards enter the following command to build and install dwm (if
-necessary as root):
+necessary as **root**):
 
 ```
     make clean install
@@ -39,13 +39,9 @@ everything should be written on the `config.h`, edit color scheme in `scheme.h`
 
 ### About rounded patch
 you can set up in which rounded corner should be applied on the opened window by issuing `isfloating` and/or `iscentered` rules in `config.h` . Do note that original rules remains apply `isfloating` will make window floating and `iscentered` will make window centered respectively.
-- quirks and behaviour you might expect :
-* case `round_all=0`, view examples in `config.h`
-    - no rules means window is not-rounded
-    - `floating` means window is rounded
-    - `centered` means flexible, rounded on/with mouse resize (it causes window won't be able to autoresize properly when changing layouts after the rounded corners applied)
-    - `floating` + `centered` means window is not-rounded (use this in case you need to toggle between `floating` and `fullscreen` window like `mpv`, `sxiv`, etc)
 
+quirks and behaviour you might expect :
+* case `round_all=0`, view usage examples in `config.h`
 * case `round_all=1`
     - everythings will be rounded (but it also draws rounded corners in a `fullscreen` mode resulting in ugly corners)
 

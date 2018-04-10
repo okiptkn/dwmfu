@@ -6,7 +6,11 @@
 # (c) 2018 <Restu Purnomo>
 # Licensing stuff : By the name of the Dark Lord Satania-sama, I hereby granted you the permissions 
 # to do whatever the fuck it is you want to do with this script. No warranty or whatsoever provided.
-# 
+#
+
+# UPDATE : scrap this script and use my other getstat(https://github.com/okiptkn/getstat) instead,
+# it comes with more features and less dependencies
+#
 
 _net() {
         local _GETIWL=$(/sbin/iwgetid -r) # requires wireless_tools package
@@ -48,9 +52,9 @@ _music() {
         else
             echo "${text}"; sleep 5
         fi
-    } 2>/dev/null
+} 2>/dev/null
 
     while true; do
-        xsetroot -name "    /$(_music)    /$(_touchp)    /$(_net)    /$(date +'%A, %d %b - %R %Z ')" &2>/dev/null
+        xsetroot -name "    /$(_music)    /$(_touchp)    /$(_net)    /$(date +'%A, %d %b - %R %Z ')" 
         sleep 5
     done

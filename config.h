@@ -8,7 +8,7 @@ static const int showbar            = 1;        // 0 means no bar
 static const int topbar             = 1;        // 0 means bottom bar
 static const int round_radius       = 4;        // rounded corners radius
 static const int round_all          = 0;        // whether or not to round everything up, reminder that fullscreen mode will also be included
-static const char *fonts[]          = { "abel:size=10", "inconsolata for powerline:pixelsize=22" };
+static const char *fonts[]          = { "PT Sans Narrow:style=Bold:size=11", "inconsolata for powerline:pixelsize=22" };
 
 // color scheme
 #include "scheme.h" // current
@@ -21,7 +21,7 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-  /* class            instance     title     tags mask    (c)iscentered   (f)isfloating   monitor   |    (c,f) rounded corner behaviour example    */
+  /* class,           instance,    title,    tags mask,    is(c)entered,   is(f)loating,  monitor,  |    (c,f) rounded corner behaviour example    */
   { "Firefox",        NULL,        NULL,     1 << 3,	   0,              0,             -1 },     //   (0,0) NOT
   { "Code",           NULL,        NULL,     1 << 2,	   0,              0,             -1 },     //   (0,0) NOT
   { "Sxiv",           NULL,        NULL,     0,            1,              1,             -1 },     //   (1,1) NOT
@@ -29,7 +29,7 @@ static const Rule rules[] = {
   { "XFontSel",       NULL,        NULL,     0,            1,              1,             -1 },     //   (1,1) NOT
   { "Xfd",            NULL,        NULL,     0,            1,              1,             -1 },     //   (1,1) NOT
   { "tabbed",         NULL,        NULL,     0,            1,              0,             -1 },     //   (1,0) rounded ONLY on mouse resize 
-  { "st-256color",    NULL,        NULL,     0,            0,              1,             -1 },     //   (0,1) rounded
+  { "st-256color",    NULL,        NULL,     0,            1,              1,             -1 },     //   (1,1) NOT
   { "mpv",            NULL,        NULL,     0,            1,         	   1,             -1 },     //   (1,1) NOT
 };
 

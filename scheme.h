@@ -1,17 +1,16 @@
-static const char red[]             = "#be1932";
-static const char red2[]            = "#fb506a";
-static const char darkbrw[]         = "#05111D";
-static const char darkgry[]         = "#c4bfbf";
-static const char titlefg[]         = "#b47283"; 
-static const char white[]           = "#ffffff";
-static const char lightgry[]        = "#d2cdcd";
-static const char lightgry2[]       = "#e7e2e2";
-static const char *colors[][6]      = {
+static const char white[]           = "#E3E3E3";
+static const char vanilla[]         = "#D9D5A6";
+static const char red[]             = "#CC939B";
+static const char black[]           = "#27292A";
+static const char cyan[]            = "#7EC5B5";
+static const char titlefg[]         = "#AFC5B5";
+static const char *colors[][7]      = {
 	/*               fg            bg           border   */
-	[SchemeNorm]   = { darkgry,    darkbrw,    white },
-	[SchemeSel]    = { lightgry2,  red,        white },
-    [SchemeUrg]    = { darkbrw,    darkgry,    white },
-    [SchemeTitle]  = { titlefg,    darkbrw,    white },
-    [SchemeStatus] = { red2,       darkbrw,    white },
-    [SchemePowel]  = { red,        darkbrw,    white },
+	[SchemeNorm]   = { white,      black,      black },
+	[SchemeSel]    = { black,      vanilla,    red   },
+    [SchemeUrg]    = { black,      red,        white },
+    [SchemeTitle]  = { titlefg,    black,      black },
+    [SchemeStaon]  = { cyan,       black,      black },
+    [SchemeStaoff] = { red,        black,      black },
+    [SchemePowel]  = { cyan,       black,      black },
 };
